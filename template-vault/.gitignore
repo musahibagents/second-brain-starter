@@ -1,0 +1,8 @@
+.env
+.env.*
+*.key
+*.pem
+.claude/settings.local.json
+.claude/state/
+__pycache__/
+.DS_Store

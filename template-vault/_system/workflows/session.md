@@ -1,0 +1,2 @@
+# Session continuity
+Before ending substantial work, update `_system/session.md` with completed outcomes, active work, decisions, next actions, evidence and limitations. Promote durable facts to MEMORY with links; detailed events go to journal. Keep MEMORY within 120 lines by moving detail to linked pages, never by silently deleting evidence. Next session read the handoff after core boot. Optional hooks load this file; they never turn raw transcripts into trusted facts automatically.
