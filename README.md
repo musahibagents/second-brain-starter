@@ -35,6 +35,5 @@ Optional Claude context hooks: add `--enable-hooks` during initial installation.
 
 Your own AI clients, integrations, global plugins and accounts must be installed or connected separately. Instructions do not transfer access to external services. See [setup and connection](docs/SETUP.md), [mechanism map](docs/MECHANISMS.md) and [verification](docs/VERIFICATION.md).
 
-New to second brains? Read the [Second Brain Field Guide](docs/SECOND-BRAIN-GUIDE.md) for the basics, daily routines, prompt examples and advanced workflows.
 
 Keep the installed personal vault separate from this public distribution. Model clients may send loaded content to their providers; local Markdown does not imply offline inference.
