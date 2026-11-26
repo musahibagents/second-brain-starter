@@ -1,23 +1,38 @@
 # Second Brain Starter
-A portable personal assistant with a file-based memory. Choose its name, explain your work, and let it adapt through conversation.
 
-Built on the Second Brain framework by Asadulelah. This distribution generalizes the operating mechanisms into a portable Claude Code and Codex starter. See LICENSE.
+A complete reusable vault foundation for Claude Code and Codex: folder hierarchy, memory, operating rules, dedicated workflows, filing conventions, templates, design method and local skills. Personal records start empty. Choose the assistant's name and describe your own work during onboarding.
 
-## Install
-Requires Python 3.9+ and an installed Claude Code or Codex client. Obsidian is optional.
+Built on the Second Brain framework by Asadulelah. See LICENSE and retained third-party attribution.
 
-1. Download or clone this starter.
-2. Run `python3 install.py /path/to/my-brain` (Windows: `py install.py C:/path/to/my-brain`). The destination must be absent or empty.
-3. Open the resulting folder in Claude Code or Codex and say: **Set up my brain.**
-4. Choose its name, describe your work and preferences. Onboarding writes your profile and working rules.
+## Download and install
 
-The installed brain is a separate private folder. Keep personal records out of this distribution repository. Model clients may send loaded content to their providers; local Markdown storage does not imply offline inference.
+Download and extract the **whole repository**, then open a terminal in the folder containing `install.py`:
 
-## Included mechanisms
-Identity and user profile; concise durable memory; project board and commitments; automatic filing and backlinks; sourced research and decision logs; progressive onboarding; session handoff; context selection; maintenance, deduplication, reconciliation, and typed graph guidance; portable Claude and Codex adapters.
+```sh
+python3 install.py ../my-brain
+```
 
-Optional Claude hooks load session state and select relevant notes. Enable them with `python3 install.py /path/to/my-brain --enable-hooks` during initial installation. Codex uses the same files and explicit session handoff; Claude hooks do not run in Codex. No background schedule is installed. Maintenance runs on request.
+On Windows:
 
-Optional work packs cover SEO, marketing, scientific research, and website projects. Onboarding selects and adapts packs from the owner's explanation. Any other domain can be added using the same structure.
+```powershell
+py install.py ../my-brain
+```
 
-See `docs/MECHANISMS.md` for the mechanism map. `reference/upstream-skills/` preserves the original framework workflows as reference; active workflows live in the installed vault and do not require those optional integrations.
+Requires Python 3.9+ and an installed Claude Code or Codex client. The destination must be new or empty. Open the generated **my-brain** folder in your AI client and say **Set up my brain.** For Obsidian, open that same folder as a vault.
+
+The repository's `reference/` directory is supporting reading. The working hierarchy lives in `template-vault/` and is copied automatically, including hidden client instruction folders. You do not have to create the folders by hand.
+
+Optional Claude context hooks: add `--enable-hooks` during initial installation. These do not run in Codex; no background service is installed.
+
+## Included
+
+- Identity, owner profile, durable memory, project board, commitments and session continuity.
+- Journal, people, clients, pipeline, projects, knowledge, strategy, finance, raw sources, attachments, deliverables and build folders.
+- Daily briefing, call prep/debrief, follow-up, research, offers, outreach, content, decks, handoff and maintenance workflows.
+- Detailed filing conventions and blank record templates.
+- Shared interface design method, website workflow, unslop and local security workflow instructions.
+- Optional domain packs for SEO, marketing, science and website work.
+
+Your own AI clients, integrations, global plugins and accounts must be installed or connected separately. Instructions do not transfer access to external services. See [setup and connection](docs/SETUP.md), [mechanism map](docs/MECHANISMS.md) and [verification](docs/VERIFICATION.md).
+
+Keep the installed personal vault separate from this public distribution. Model clients may send loaded content to their providers; local Markdown does not imply offline inference.
